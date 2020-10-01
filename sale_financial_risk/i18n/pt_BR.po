@@ -21,9 +21,19 @@ msgstr ""
 "X-Generator: Weblate 3.10\n"
 
 #. module: sale_financial_risk
-#: model:ir.model.fields,field_description:sale_financial_risk.field_sale_order_line__amt_to_invoice
-msgid "Amount To Invoice"
-msgstr "Valor a faturar"
+#: model:ir.model.fields,field_description:sale_financial_risk.field_sale_order_line__commercial_partner_id
+msgid "Commercial Entity"
+msgstr ""
+
+#. module: sale_financial_risk
+#: model:ir.model.fields,field_description:sale_financial_risk.field_sale_order_line__company_currency_id
+msgid "Company Currency"
+msgstr ""
+
+#. module: sale_financial_risk
+#: model:ir.model,name:sale_financial_risk.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
 
 #. module: sale_financial_risk
 #: model:ir.model,name:sale_financial_risk.model_res_partner
@@ -31,7 +41,7 @@ msgid "Contact"
 msgstr "Contato"
 
 #. module: sale_financial_risk
-#: code:addons/sale_financial_risk/models/sale.py:16
+#: code:addons/sale_financial_risk/models/sale.py:20
 #, python-format
 msgid "Financial risk exceeded.\n"
 msgstr "Risco financeiro excedido.\n"
@@ -49,6 +59,17 @@ msgid "Include Sales Orders"
 msgstr "Inclua Ordens de Venda"
 
 #. module: sale_financial_risk
+#: model:ir.model.fields,field_description:sale_financial_risk.field_res_config_settings__include_risk_sale_order_done
+#: model_terms:ir.ui.view,arch_db:sale_financial_risk.res_config_settings_view_form
+msgid "Include locked sale orders into risk calculation"
+msgstr ""
+
+#. module: sale_financial_risk
+#: model_terms:ir.ui.view,arch_db:sale_financial_risk.res_config_settings_view_form
+msgid "Include orders in done state"
+msgstr ""
+
+#. module: sale_financial_risk
 #: model:ir.model.fields,field_description:sale_financial_risk.field_res_partner__risk_sale_order_limit
 #: model:ir.model.fields,field_description:sale_financial_risk.field_res_users__risk_sale_order_limit
 msgid "Limit Sales Orders"
@@ -60,9 +81,20 @@ msgid "Payment Transaction"
 msgstr ""
 
 #. module: sale_financial_risk
+#: model:ir.model.fields,field_description:sale_financial_risk.field_sale_order_line__risk_amount
+msgid "Risk amount"
+msgstr ""
+
+#. module: sale_financial_risk
 #: model:ir.model,name:sale_financial_risk.model_sale_order
 msgid "Sale Order"
 msgstr "Ordem de Venda"
+
+#. module: sale_financial_risk
+#: model_terms:ir.ui.view,arch_db:sale_financial_risk.financial_risk_sale_order_line_pivot_view
+#, fuzzy
+msgid "Sale lines"
+msgstr "Linha de Ordens de Venda"
 
 #. module: sale_financial_risk
 #: model:ir.model,name:sale_financial_risk.model_sale_order_line
@@ -76,13 +108,13 @@ msgid "Set 0 if it is not locked"
 msgstr "Configure como 0 se não estiver bloqueado"
 
 #. module: sale_financial_risk
-#: code:addons/sale_financial_risk/models/sale.py:25
+#: code:addons/sale_financial_risk/models/sale.py:29
 #, python-format
 msgid "This sale order exceeds the financial risk.\n"
 msgstr "Essa ordem de venda excede o risco financeiro.\n"
 
 #. module: sale_financial_risk
-#: code:addons/sale_financial_risk/models/sale.py:20
+#: code:addons/sale_financial_risk/models/sale.py:24
 #, python-format
 msgid "This sale order exceeds the sales orders risk.\n"
 msgstr "Esta ordem de venda excede o risco de ordens de venda.\n"
@@ -98,6 +130,9 @@ msgstr "Total de ordens vendas não faturadas"
 #: model:ir.model.fields,help:sale_financial_risk.field_res_users__risk_sale_order
 msgid "Total not invoiced of sales orders in Sale Order state"
 msgstr "Total não faturado de ordens de venda em estado de Ordem de Venda"
+
+#~ msgid "Amount To Invoice"
+#~ msgstr "Valor a faturar"
 
 #~ msgid "Partner"
 #~ msgstr "Parceiro"

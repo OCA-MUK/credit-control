@@ -39,8 +39,10 @@ Configuration
 
 Configure the policies and policy levels in ``Invoicing  > Configuration >
 Credit Control > Credit Control Policies``.
-You can define as many policy levels as you need. You must set on which
-accounts are applied every Credit Control Policy under Accounts tab.
+You can define as many policy levels as you need and you can even define
+levels with a negative number of days to run notifications days in advance.
+You must set on which accounts are applied every Credit Control Policy
+under Accounts tab.
 
 Configure a tolerance for the Credit control and a default policy
 applied on all partners in each company, under the Accounting tab in your
@@ -51,13 +53,14 @@ You are able to specify a particular policy for one partner or one invoice.
 Usage
 =====
 
-Menu entries are located in ``Invoicing > Adviser > Credit Control``.
+Menu entries are located in *Invoicing > Adviser > Credit Control*.
 
-Create a new "run" in the ``Credit Control Run`` menu with the controlling date.
-Then, use the ``Compute Credit Lines`` button. All the credit control lines will
-be generated. You can find them in the ``Credit Control Lines`` menu.
+Create a new "run" in the *Credit Control Run* menu with the controlling date.
+Then, use the *Compute Credit Lines* button. All the credit control lines will
+be generated. You can find them in the *Credit Control Lines* menu.
 
 On each generated line, you have many choices:
+
  * Send a email
  * Print a letter
  * Change the state (so you can ignore or reopen lines)
@@ -65,6 +68,13 @@ On each generated line, you have many choices:
    a second credit control run is done.
  * Mark one line as Manual followup will also mark all the lines of the
    partner. The partner will be visible in "Do Manual Follow-ups".
+
+Once your lines are properly set up, go back to the "run" and click on
+*Run channel action* to massively generate and queue communication emails or
+letters for all linked lines.
+
+Then, use the *Communications* smart button to see all email communication
+processes that have been created and follow them.
 
 Bug Tracker
 ===========
@@ -95,10 +105,17 @@ Contributors
 * Guewen Baconnier (Camptocamp)
 * Sylvain Van Hoof (Okia SPRL) <sylvain@okia.be>
 * Akim Juillerat (Camptocamp) <akim.juillerat@camptocamp.com>
-* Vicent Cubells (Tecnativa) <vicent.cubells@tecnativa.com>
 * Kinner Vachhani (Access Bookings Ltd) <kin.vachhani@gmail.com>
 * Raf Ven <raf.ven@dynapps.be>
 * Quentin Groulard (ACSONE) <quentin.groulard@acsone.eu>
+* `Tecnativa <https://www.tecnativa.com>`_:
+
+  * Vicent Cubells
+  * Ernesto Tejeda
+  * Pedro M. Baeza
+  * Jairo Llopis
+
+* Enric Tobella <etobella@creublanca.es>
 
 Maintainers
 ~~~~~~~~~~~
